@@ -32,7 +32,8 @@
     "@typescript-eslint/comma-dangle": [
       "error",
       {
-        "objects": "only-multiline"
+        "arrays": "always-multiline",
+        "objects": "always-multiline"
       }
     ],
     "react/jsx-filename-extension": [
@@ -59,6 +60,12 @@
         "ObjectPattern": { "multiline": true },
         "ImportDeclaration": "never",
         "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+      }
+    ],
+    "no-restricted-exports": [
+      "error",
+      {
+        "restrictedNamedExports": ["then"]
       }
     ]
   }
